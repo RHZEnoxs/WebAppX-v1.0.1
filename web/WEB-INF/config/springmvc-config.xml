@@ -10,30 +10,19 @@
         http://www.springframework.org/schema/mvc/spring-mvc.xsd     
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
-
+        
     <!-- spring可以自動去掃描base-pack下面的包或者子包下面的java文件，
     	如果掃描到有Spring的相關註解的類，則把這些類註冊為Spring的bean -->
     <context:component-scan base-package="spring.mvc.code.controller"/>
-    <context:component-scan base-package="com.enoxs.controller"/>
-    <!-- @RequestBody 使用json傳輸時 -->
-    <!--<mvc:annotation-driven>-->
-        <!--<mvc:message-converters register-defaults="false">-->
-            <!--<bean class="org.springframework.http.converter.StringHttpMessageConverter">-->
-                <!--<constructor-arg value="UTF-8" />-->
-            <!--</bean>-->
-            <!--<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">-->
-            <!--</bean>-->
-        <!--</mvc:message-converters>-->
-    <!--</mvc:annotation-driven>-->
-
+    
     <!-- 配置處理映射器 -->
-    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>-->
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
+     
+     <!-- 配置處理器適配器-->
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>
 
-    <!-- 配置處理器適配器-->
-    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>-->
-
-    <!-- 示圖解析器 -->
-    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"/>-->
+	<!-- 示圖解析器 -->
+	<!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"/>-->
 
     <!--2018-12-10 Example : ControllerTest-->
     <!-- 示圖解析器  p:prefix屬性表示前綴  p:suffix 表示後綴  -->
@@ -47,8 +36,4 @@
     <mvc:annotation-driven/>
     <!-- 靜態資源處理 -->
     <mvc:default-servlet-handler/>
-
-    <!-- 允許存取檔案 -->
-    <mvc:resources location="WEB-INF/static/" mapping="/static/**" cache-period="86400"></mvc:resources>
-
 </beans>

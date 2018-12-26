@@ -2,11 +2,16 @@ package spring.mvc.code.controller;
 
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HelloController {
+    /**
+     * code Example : AnnotationTest
+     * @return
+     */
     @RequestMapping(value = "/hello")
     public ModelAndView hello() {
         System.out.println("hello方法 被調用");
@@ -18,5 +23,17 @@ public class HelloController {
         mv.setViewName("/WEB-INF/jsp/welcome.jsp");
         // 返回ModelAndView對象。
         return mv;
+    }
+
+    /**
+     * Date : 2018-12-09
+     * code Example : ControllerTest
+     * @param model
+     * @return
+     */
+    @RequestMapping("/helloWorld")
+    public String helloWorld(Model model) {
+        model.addAttribute("message", "Hello World!");
+        return "helloWorld";
     }
 }

@@ -15,5 +15,9 @@
   使用IntelliJ IDEA 搭建 Spring MVC 專案！
   部署成功！
   運行成功！
+  <br><br><br>
+  <a href="appInfo">Application Information</a><br><br>
+  <br><br><br>
+  <a href="codeThird">第三章 Spring MVC 的常用註解</a><br><br>
   </body>
 </html>

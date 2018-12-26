@@ -20,5 +20,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Spring MVC" level="project" />
+    <orderEntry type="library" name="JSON" level="project" />
+    <orderEntry type="library" name="commons-lang3-3.8.1" level="project" />
   </component>
 </module>
