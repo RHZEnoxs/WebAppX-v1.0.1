@@ -15,6 +15,7 @@
     	如果掃描到有Spring的相關註解的類，則把這些類註冊為Spring的bean -->
     <context:component-scan base-package="spring.mvc.code.controller"/>
     <context:component-scan base-package="com.enoxs.controller"/>
+
     <!-- @RequestBody 使用json傳輸時 -->
     <!--<mvc:annotation-driven>-->
         <!--<mvc:message-converters register-defaults="false">-->
@@ -44,7 +45,8 @@
     <!--2018-12-10 Example : ControllerTest-->
     <!--Enoxs WHY : 20181210001-->
     <!-- 默認裝配方案 -->
-    <mvc:annotation-driven/>
+    <!--<mvc:annotation-driven/>-->
+    <mvc:annotation-driven enable-matrix-variables="true"/>
     <!-- 靜態資源處理 -->
     <mvc:default-servlet-handler/>
 

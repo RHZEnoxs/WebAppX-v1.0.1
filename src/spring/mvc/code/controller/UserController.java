@@ -15,13 +15,11 @@ import java.util.List;
 
 /**
  * Code Ch3 Example - RequestMappingTest
+ * @RequestMapping 和 @RequestParam 註解的使用 (RequestMappingTest)
  */
 @Controller
 @RequestMapping(value="/user")
 public class UserController {
-    /**
-     * @RequestMapping 和 @RequestParam 註解的使用 (RequestMappingTest)
-     */
     private static List<User> userList;
     public UserController() {
         super();
