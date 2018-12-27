@@ -50,5 +50,6 @@
 
     <!-- 允許存取檔案 -->
     <mvc:resources location="WEB-INF/static/" mapping="/static/**" cache-period="86400"></mvc:resources>
+    <mvc:resources location="WEB-INF/jsp/" mapping="/jsp/**" cache-period="86400"></mvc:resources>
 
 </beans>

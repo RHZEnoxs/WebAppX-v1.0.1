@@ -9,11 +9,11 @@
 <html>
 <head>
     <title>Application Information</title>
-    <script src="static/jquery/jquery.js"></script>
-    <script src="static/bootstrap/js/bootstrap.js"></script>
-    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="static/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
-    <script src="static/plugin/moment.min.js"></script>
+    <script src="../../static/jquery/jquery.js"></script>
+    <script src="../../static/bootstrap/js/bootstrap.js"></script>
+    <link href="../../static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../../static/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+    <script src="../../static/plugin/moment.min.js"></script>
 </head>
 <body>
 <h3>Ajax</h3>
@@ -31,12 +31,18 @@
     <button id='btnPostIntegerList'>Post List Integer </button>
     <button id='btnPostStringList'>Post List String </button>
 </div>
+<br>
+<div id="divQunit">
+    <button class="btn btn-primary" id="btnQUnit"><a href="appInfo/qunitSE">測試 ModelAndViewTest</a></button>
+</div>
+
 </body>
 </html>
 
 <script>
     $divPost = $('#divPostVar');
     $divPostCollect = $('#divPostCollect');
+    $divQunit = $('#divQunit');
 
     $btnPostInteger = $divPost.find('#btnPostInteger');
     $btnPostLong = $divPost.find('#btnPostLong');
@@ -45,8 +51,9 @@
 
     $btnPostIntegerArray = $divPostCollect.find('#btnPostIntegerArray');
     $btnPostStringArray = $divPostCollect.find('#btnPostStringArray');
-
     $btnPostIntegerList = $divPostCollect.find('#btnPostIntegerList');
+
+    $btnQUnit = $divQunit.find('#btnQUnit');
 
 
     $btnPostInteger.off('click').on('click', function () {
@@ -190,5 +197,9 @@
                 alert(resp)
             }
         });
+    });
+
+    $btnQUnit.off('click').on('click',function(){
+
     });
 </script>
