@@ -13,7 +13,7 @@
 
     <!-- spring可以自動去掃描base-pack下面的包或者子包下面的java文件，
     	如果掃描到有Spring的相關註解的類，則把這些類註冊為Spring的bean -->
-    <context:component-scan base-package="spring.mvc.code.controller"/>
+    <context:component-scan base-package="spring.mvc.code.ch3.controller"/>
     <context:component-scan base-package="com.enoxs.controller"/>
 
     <!-- @RequestBody 使用json傳輸時 -->

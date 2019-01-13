@@ -1,4 +1,4 @@
-package spring.mvc.code.controller;
+package spring.mvc.code.ch3.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -6,7 +6,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import spring.mvc.code.domain.User;
+import spring.mvc.code.ch3.domain.User;
 
 /**
  * Code Ch3 Example - ModelTest

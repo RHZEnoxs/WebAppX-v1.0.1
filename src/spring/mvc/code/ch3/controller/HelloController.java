@@ -1,4 +1,4 @@
-package spring.mvc.code.controller;
+package spring.mvc.code.ch3.controller;
 
 
 import org.springframework.stereotype.Controller;

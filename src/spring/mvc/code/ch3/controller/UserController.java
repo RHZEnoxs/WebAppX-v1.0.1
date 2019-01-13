@@ -1,4 +1,4 @@
-package spring.mvc.code.controller;
+package spring.mvc.code.ch3.controller;
 
 
 import org.springframework.stereotype.Controller;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import spring.mvc.code.domain.User;
+import spring.mvc.code.ch3.domain.User;
 
 import java.util.ArrayList;
 import java.util.List;
