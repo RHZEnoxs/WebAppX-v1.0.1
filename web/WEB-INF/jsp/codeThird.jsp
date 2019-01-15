@@ -45,11 +45,11 @@
     </table>
 </form>
 <h3>7.@ModelAttribute 註解</h3>
-#7.1 <a href="loginForm1">測試 @ModelAttribute(value="") 註釋返回具體類的方法 </a><br>
-#7.2 <a href="modelAttribute/loginForm2">測試 @ModelAttribute 註釋 void 返回值的方法</a><br>
-#7.3 <a href="modelAttribute/loginForm3">測試 @ModelAttribute 註釋返回具體類的方法</a><br>
-#7.4 <a href="modelAttribute/loginForm4">測試 @ModelAttribute 和 @RequestMapping 同時註釋一個方法</a><br>
-#7.5 <a href="modelAttribute/loginForm5">測試 @ModelAttribute 註釋一個方法的參數</a><br><br>
+#7.1 <a href="modelAttributeForm/loginForm1">測試 @ModelAttribute(value="") 註釋返回具體類的方法 </a><br>
+#7.2 <a href="modelAttributeForm/loginForm2">測試 @ModelAttribute 註釋 void 返回值的方法</a><br>
+#7.3 <a href="modelAttributeForm/loginForm3">測試 @ModelAttribute 註釋返回具體類的方法</a><br>
+#7.4 <a href="modelAttributeForm/loginForm4">測試 @ModelAttribute 和 @RequestMapping 同時註釋一個方法</a><br>
+#7.5 <a href="modelAttributeForm/loginForm5">測試 @ModelAttribute 註釋一個方法的參數</a><br><br>
 
 </body>
 </html>

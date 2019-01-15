@@ -8,9 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>測試@ModelAttribute和@RequestMapping同時註釋一個方法</title>
 </head>
 <body>
-
+訪問request作用範圍域中的username對象＠＠：${requestScope.username }<br>
+<br>
 </body>
 </html>

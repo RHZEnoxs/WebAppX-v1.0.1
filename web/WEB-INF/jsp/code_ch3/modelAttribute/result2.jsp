@@ -8,9 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>測試@ModelAttribute註釋void返回值的方法</title>
 </head>
 <body>
-
+訪問 request作用範圍域中的 loginname 對象：${requestScope.loginname }<br>
+訪問 request作用範圍域中的 password  對象：${requestScope.password }<br>
 </body>
 </html>
