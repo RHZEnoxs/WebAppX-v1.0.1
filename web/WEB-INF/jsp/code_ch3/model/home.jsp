@@ -8,10 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>@RequestMapping 註解</title>
+    <title>Chapter3 - @RequestMapping 註解</title>
 </head>
 <body>
-<h2>@RequestMapping 註解</h2>
+<h2>Chapter3 - @RequestMapping 註解</h2>
 <h3>測試@Model和@ModelMap</h3>
 <a href="model/modelTest">測試 Model</a><br><br>
 <a href="model/ModelMapTest">測試 ModelMap</a><br><br>

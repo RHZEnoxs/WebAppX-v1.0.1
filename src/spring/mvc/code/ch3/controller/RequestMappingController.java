@@ -14,14 +14,19 @@ import java.util.List;
 
 
 /**
- * Code Ch3 Example - RequestMappingTest
+ * Code Example : Ch3 - RequestMappingTest
  * @RequestMapping 和 @RequestParam 註解的使用 (RequestMappingTest)
  */
 @Controller
-@RequestMapping(value="/user")
-public class UserController {
+@RequestMapping(value="/requestMapping")
+public class RequestMappingController {
+    private static String filePath = "code_ch3/requestMapping/";
+    /**
+     * Date : 2019-01-20
+     * Code Example Ch3 - RequestMappingTest
+     */
     private static List<User> userList;
-    public UserController() {
+    public RequestMappingController() {
         super();
         userList = new ArrayList<User>();
     }
@@ -31,7 +36,7 @@ public class UserController {
     public String registerForm() {
         System.out.println("register GET方法被調用...");
         // 跳轉到註冊頁面
-        return "user/registerForm";
+        return filePath + "registerForm";
     }
 
     // 該方法支持POST請求
@@ -49,7 +54,7 @@ public class UserController {
         // 模擬數據庫存儲User 訊息
         userList.add(user);
         // 跳轉到登入頁面
-        return "user/loginForm";
+        return filePath + "loginForm";
     }
 
     @RequestMapping("/login")
@@ -63,10 +68,10 @@ public class UserController {
             if(user.getLoginname().equals(loginname)
                     && user.getPassword().equals(password)){
                 model.addAttribute("user",user);
-                return "user/welcome";
+                return filePath + "welcome";
             }
         }
-        return "user/loginForm";
+        return filePath + "loginForm";
     }
 
 }

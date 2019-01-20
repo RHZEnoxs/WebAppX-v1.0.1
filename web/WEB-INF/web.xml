@@ -21,8 +21,8 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
-    <!--2018-12-10 Example: ControllerTest-->
-    <!--Enoxs WHY : 20181210002-->
+    <!--2019-01-20 Code Example: Ch2 - ControllerTest-->
+    <!--Enoxs: 2019-01-20 Why ? -->
     <!-- 編碼過濾器 -->
     <filter>
         <filter-name>characterEncodingFilter</filter-name>

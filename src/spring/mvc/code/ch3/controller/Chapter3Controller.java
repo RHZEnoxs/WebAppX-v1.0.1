@@ -6,12 +6,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping({ "/codeThird" })
-public class CodeThirdController {
+@RequestMapping({ "/chapter3" })
+public class Chapter3Controller {
     @RequestMapping(value = { "" }, method = RequestMethod.GET)
     public ModelAndView home() {
-        ModelAndView view = new ModelAndView("codeThird");
+        ModelAndView view = new ModelAndView("chapter3");
         return view;
     }
-
 }

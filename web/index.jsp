@@ -20,6 +20,8 @@
   <a href="appInfo">Application Information</a>
   <br>
   <h3>spring.mvc.code package </h3>
-  <a href="codeThird">第三章 Spring MVC 的常用註解</a>
+  <a href="hello">第二章 開發第⼀個 Spring MVC應⽤</a>
+  <br>
+  <a href="chapter3">第三章 Spring MVC 的常用註解</a>
   </body>
 </html>

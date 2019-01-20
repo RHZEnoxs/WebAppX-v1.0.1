@@ -13,11 +13,14 @@
 </head>
 <body>
 <h2>第三章 Spring MVC 的常用註解</h2>
+<h3>0.@Controller 註解</h3>
+<a href="helloWorld"> @Controller 註解</a>(ModelController)
+<br>
 <h3>1.@RequestMapping 註解</h3>
 <a href="model"> @RequestMapping 註解</a>(ModelController)
-<br><br>
+<br>
 <h3>2.@RequestParam 註解</h3>
-<a href="user/register">@RequestMapping 註解</a>(U serController)
+<a href="requestMapping/register">@RequestMapping 註解</a>(RequestMappingController)
 <h3>3.@CrossOrigin 註解</h3>
 <a href="variable/home">@Path Variable 註解 和 @Matrix Variable 註解的使⽤</a>(VariableController)
 <br>
@@ -33,7 +36,7 @@
     <table>
         <tr>
             <td><label>帳號: </label></td>
-            <td><input type="text" id="loginname" name="loginname" ></td>
+            <td><input type="text" id="loginname" name="loginname"></td>
         </tr>
         <tr>
             <td><label>密碼: </label></td>

@@ -9,16 +9,24 @@ import org.springframework.web.servlet.ModelAndView;
 import spring.mvc.code.ch3.domain.User;
 
 /**
- * Code Ch3 Example - ModelTest
+ * Code Example : Ch3 - ModelTest
+ * Code Example : Ch3 - ModelAndView
  */
 @Controller
 @RequestMapping({ "/model" })
 public class ModelController {
+    private static String filePath = "code_ch3/model/";
+
     @RequestMapping(value = { "" }, method = RequestMethod.GET)
     public ModelAndView home(ModelMap model) {
-        ModelAndView view = new ModelAndView("model/home");
+        ModelAndView view = new ModelAndView(filePath +"home");
         return view;
     }
+
+    /**
+     * Date : 2019-01-20
+     * Code Example Ch3 - ModelTest
+     */
 
     @RequestMapping(value="/modelTest")
     public String modelTest(Model model){
@@ -28,7 +36,7 @@ public class ModelController {
         user.setUsername("Enoxs");
         // 將 User對象添加到ModelMap當中
         model.addAttribute("user", user);
-        return "model/result1";
+        return filePath + "result1";
     }
 
     @RequestMapping(value="/ModelMapTest")
@@ -39,8 +47,13 @@ public class ModelController {
         user.setUsername("RHZ");
         // 將 User對象添加到ModelMap當中
         modelMap.addAttribute("user", user);
-        return "model/result2";
+        return filePath + "result2";
     }
+
+    /**
+     * Date : 2019-01-20
+     * Code Example Ch3 - ModelAndView
+     */
 
     @RequestMapping(value="/ModelAndViewTest")
     public ModelAndView ModelAndViewTest(ModelAndView mv){
@@ -51,7 +64,7 @@ public class ModelController {
         // 將 User對象添加到ModelAndView當中
         mv.addObject("user", user);
         // 設置轉發頁面
-        mv.setViewName("model/result1");
+        mv.setViewName(filePath + "result1");
         return mv;
     }
 }

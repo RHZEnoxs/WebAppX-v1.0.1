@@ -11,47 +11,40 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
+
+    <!--2019-01-20 Code Example : Ch2 - ControllerTest #BEGIN -->
     <!-- spring可以自動去掃描base-pack下面的包或者子包下面的java文件，
     	如果掃描到有Spring的相關註解的類，則把這些類註冊為Spring的bean -->
     <context:component-scan base-package="spring.mvc.code.ch3.controller"/>
     <context:component-scan base-package="com.enoxs.controller"/>
-
-    <!-- @RequestBody 使用json傳輸時 -->
-    <!--<mvc:annotation-driven>-->
-        <!--<mvc:message-converters register-defaults="false">-->
-            <!--<bean class="org.springframework.http.converter.StringHttpMessageConverter">-->
-                <!--<constructor-arg value="UTF-8" />-->
-            <!--</bean>-->
-            <!--<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">-->
-            <!--</bean>-->
-        <!--</mvc:message-converters>-->
-    <!--</mvc:annotation-driven>-->
-
-    <!-- 配置處理映射器 -->
-    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>-->
-
-    <!-- 配置處理器適配器-->
-    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>-->
-
-    <!-- 示圖解析器 -->
-    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"/>-->
-
-    <!--2018-12-10 Example : ControllerTest-->
+    <!-- 默認裝配方案 -->
+    <!--<mvc:annotation-driven/>-->
+    <!--2019-01-20 Code Example : Ch3 - VariableTest #BEGIN -->
+    <mvc:annotation-driven enable-matrix-variables="true"/>
+    <!--2019-01-20 Code Example : Ch3 - VariableTest #END -->
+    <!-- 靜態資源處理 -->
+    <mvc:default-servlet-handler/>
     <!-- 示圖解析器  p:prefix屬性表示前綴  p:suffix 表示後綴  -->
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:prefix="/WEB-INF/jsp/" p:suffix=".jsp"/>
-
-    <!--2018-12-10 Example : ControllerTest-->
-    <!--Enoxs WHY : 20181210001-->
-    <!-- 默認裝配方案 -->
-    <!--<mvc:annotation-driven/>-->
-    <mvc:annotation-driven enable-matrix-variables="true"/>
-    <!-- 靜態資源處理 -->
-    <mvc:default-servlet-handler/>
+    <!--2019-01-20 Code Example : Ch2 - ControllerTest #END -->
 
     <!-- 允許存取檔案 -->
     <mvc:resources location="WEB-INF/static/" mapping="/static/**" cache-period="86400"></mvc:resources>
     <mvc:resources location="WEB-INF/jsp/" mapping="/jsp/**" cache-period="86400"></mvc:resources>
 
+
+    <!--Unknow Source-->
+
+    <!-- @RequestBody 使用json傳輸時 -->
+    <!--<mvc:annotation-driven>-->
+    <!--<mvc:message-converters register-defaults="false">-->
+    <!--<bean class="org.springframework.http.converter.StringHttpMessageConverter">-->
+    <!--<constructor-arg value="UTF-8" />-->
+    <!--</bean>-->
+    <!--<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">-->
+    <!--</bean>-->
+    <!--</mvc:message-converters>-->
+    <!--</mvc:annotation-driven>-->
 </beans>

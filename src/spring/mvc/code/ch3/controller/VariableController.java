@@ -9,19 +9,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 /**
- * Code Ch3 Example - VariableTest、CrossOriginTest
+ * Code Example : Ch3 - Variable
  *
  * @Path Variable 註解 和 @Matrix Variable 註解的使⽤
- * @CrossOrigin 註解 的使⽤
  */
 @Controller
 @RequestMapping(value="/variable")
 public class VariableController {
+    private static String filePath = "code_ch3/";
+
+    /**
+     * Date : 2019-01-20
+     * Code Example Ch3 - Variable
+     */
+
     @GetMapping(value="home")
     public String home() {
         System.out.println("register GET方法被調用...");
         // 跳轉到註冊頁面
-        return "page/variablePage";
+        return filePath + "variablePage";
     }
 
     // 測試@PathVariable註解
@@ -43,7 +49,7 @@ public class VariableController {
         System.out.println("通過@MatrixVariable獲得數據： name=" + name + " age=" + age);
     }
     // 測試@MatrixVariable註解的複雜例子
-    // 該方法映射的請求為//VariableTest/productTest/computer;brand=apple,acer;low=2000;height=10000
+    // 該方法映射的請求為/VariableTest/productTest/computer;brand=apple,acer;low=2000;height=10000
     @GetMapping(value="/productTest/{goods}")
     public void productTest(
             @PathVariable String goods,
