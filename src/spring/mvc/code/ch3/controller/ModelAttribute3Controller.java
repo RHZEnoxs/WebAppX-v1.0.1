@@ -12,6 +12,8 @@ import java.util.List;
 
 
 /**
+ * Code Example : Ch3 - ModelAttribute
+ *
  * @ModelAttribute 註解用於將請求參數綁訂到對象
  */
 // Controller註解用於指示該類是一個控制器，可以同時處理多個請求動作
@@ -20,6 +22,9 @@ import java.util.List;
 public class ModelAttribute3Controller {
     private static String filePath = "code_ch3/modelAttribute/";
     /**
+     * Date : 2019-01-24
+     * Code Example Ch3 - ModelAttribute 3
+     *
      * ModelAttribute3Controller
      */
     // 靜態List<User>集合，此處代替數據庫用來保存註冊的用戶信息

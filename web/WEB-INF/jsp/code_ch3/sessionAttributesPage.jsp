@@ -14,7 +14,12 @@
 訪問 request 作用範圍域中的user對象：${requestScope.user.username }<br>
 訪問 session 作用範圍域中的user對象：${sessionScope.user.username }<br>
 
+<p>requestScope:</p>
 Account： ${requestScope.user.loginname }<br>
+Password： ${requestScope.user.password }<br>
+
+<p>sessionScope:</p>
+Account： ${sessionScope.user.loginname }<br>
 Password： ${sessionScope.user.password }<br>
 </body>
 </html>

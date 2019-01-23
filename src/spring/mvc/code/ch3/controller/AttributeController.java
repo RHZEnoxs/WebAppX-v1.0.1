@@ -8,13 +8,16 @@ import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
+ * Code Example : Ch3 - Attribute (屬性)
  * @RequestAttribute 註解 和 @SessionAttribute 註解的使用
  */
 @Controller
 public class AttributeController {
-
-    // 測試 @CookieValue 註解
-    // 該方法映射的請求為 /cookieValueTest
+    private static String filePath = "code_ch3/";
+    /**
+     * Date : 2019-01-23
+     * Code Example Ch3 - Attribute
+     */
 
     @GetMapping(value="/attrbuteTest")
     public ModelAndView attrbuteTest(ModelAndView mv) {
@@ -24,7 +27,7 @@ public class AttributeController {
         return mv;
     }
 
-    /*
+    /**
      * 該方法映射的請求為/main
      * @RequestAttribute("school")會獲取request作用範圍中名為"school"的屬性的值賦給school變量
      * @SessionAttribute("author")會獲取session作用範圍中名為"author"的屬性的值賦給author變量
@@ -39,7 +42,7 @@ public class AttributeController {
         // 输出@SessionAttribute获得的author
         System.out.println("author: " + author);
 
-        return "page/requestSessionAttributePage";
+        return filePath + "/requestSessionAttributePage";
     }
 
 }

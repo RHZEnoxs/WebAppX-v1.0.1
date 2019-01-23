@@ -7,12 +7,20 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import spring.mvc.code.ch3.domain.User;
 
+/**
+ * Code Example : Ch3 - SessionAttributes
+ *
+ * 將Model中的屬性名為user的轉存HttpSession對象當中
+ */
 @Controller
-// 將Model中的屬性名為user的轉存HttpSession對象當中
 @SessionAttributes("user")
 @RequestMapping({ "/sessionAttributes" })
 public class SessionAttributesController {
-    // 該方法映射的請求為http://localhost:8080/SessionAttributesTest/login
+    private static String filePath = "code_ch3/";
+    /**
+     * Date : 2019-01-23
+     * Code Example Ch3 - SessionAttributes
+     */
     @RequestMapping(value="/login")
     public String login(
             @RequestParam("loginname") String loginname,
@@ -25,7 +33,7 @@ public class SessionAttributesController {
         user.setUsername("admin");
         // 將user對象添加到Model當中
         model.addAttribute("user",user);
-        return "page/sessionAttributesPage";
+        return filePath + "sessionAttributesPage";
     }
 
 
