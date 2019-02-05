@@ -4,6 +4,7 @@ $(function () {
     var $responseBodyDiv = $('#responseBodyDiv');
     var $fastJson2Div = $('#fastJson2Div');
     var $xmlDiv = $('#xmlDiv');
+    var $restDiv = $('#restDiv');
 
     var $requestBodyBtn = $requestBodyDiv.find("#requestBodyBtn");
     var $fastJsonBtn = $fastJsonDiv.find("#fastJsonBtn");
@@ -12,7 +13,8 @@ $(function () {
 
     var $sendXmlBtn = $xmlDiv.find('#sendXmlBtn');
     var $readXmlBtn = $xmlDiv.find('#readXmlBtn');
-
+    var $restBtn = $restDiv.find('#restBtn');
+    var $searchBtn = $('#searchBtn');
 
     $requestBodyBtn.off('click').on('click', function () {
         taskRequestBody();
@@ -36,6 +38,14 @@ $(function () {
 
     $readXmlBtn.off('click').on('click', function () {
         taskReadXml();
+    });
+
+    $restBtn.off('click').on('click',function(){
+        taskRest();
+    });
+
+    $searchBtn.off('click').on('click',function(){
+        taskControllerAdvice();
     });
 
     var taskRequestBody = function () {
@@ -156,7 +166,36 @@ $(function () {
                     alert("數據接收失敗");
                 }
             });
+    }
 
+    var taskRest = function (){
+        var $restTable = $restDiv.find('#restTable');
+        $.post("rest/tasktRequestBody",null,
+            function(data){
+                $.each(data,function(){
+                    var tr  = $("<tr align='center'/>");
+                    $("<td/>").html(this.id).appendTo(tr);
+                    $("<td/>").html(this.name).appendTo(tr);
+                    $("<td/>").html(this.author).appendTo(tr);
+                    $restTable.append(tr);
+                })
+            },"json");
+    }
+    
+    var taskControllerAdvice = function () {
+        $.post("controllerAdviceOrder/search",null,
+            function(data){
+                // 處理異常
+                if (data.message)
+                {
+                    alert("與服務器交互出現異常：" + data.message);
+                }
+                else
+                {
+                    // 獲取服務器響應，顯示所有訂單信息
+
+                }
+            },"json");
     }
 
 

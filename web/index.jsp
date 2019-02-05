@@ -23,5 +23,7 @@
   <a href="hello">第二章 開發第⼀個 Spring MVC應⽤</a>
   <br>
   <a href="chapter3">第三章 Spring MVC 的常用註解</a>
+  <br>
+  <a href="chapter4">第四章 Spring MVC 的標籤庫</a>
   </body>
 </html>

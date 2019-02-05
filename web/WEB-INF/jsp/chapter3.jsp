@@ -110,7 +110,32 @@
         <span><strong><b>返回 XML 格式的數據 (XmlTest)</b></strong></span>
         <button id="readXmlBtn">Read XML</button>
     </div>
-
+    <h3>11. @RestController 註解</h3>
+    <div id="restDiv">
+        <table id="restTable" border="1" style="border-collapse: collapse;">
+            <tr align="center">
+                <th>編號</th>
+                <th>書名</th>
+                <th>作者</th>
+            </tr>
+        </table>
+        <button id="restBtn">Rest.(Controller)</button>
+    </div>
+    <h3>12. Spring MVC 異常處理接口以及實現類 </h3>
+    <a href="exception/hello">沒有異常處理</a><br>
+    <a href="exception/test">使用簡單異常處理器處理異常</a><br>
+    <a href="exception/find">使用簡單異常處理器處理特定異常</a><br>
+    <h3>13. @ResponseStatus 註解</h3>
+    <a href="responseStatus/find">@ResponseStatus異常處理</a>
+    <h3>14. </h3>
+    <a href="exceptionHandler/test">@ExceptionHandler處理異常</a>
+    <hr>
+    <a href="exceptionHandler/login">UserController：父級Controller異常處理</a><br>
+    <a href="exceptionHandler/find">BookController：父級Controller異常處理</a><br>
+    <h3>15. ControllerAdvice 註解</h3>
+    <a href="controllerAdvice/find">@ControllerAdvice異常處理</a><br><br>
+    <hr>
+    <button id="searchBtn">查詢訂單（返回JSON）</button>
 
     <br><br><br>
     <br><br><br>
