@@ -4,18 +4,6 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
          http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-
-    <!-- 配置spring核心監聽器，默認會以 /WEB-INF/applicationContext.xml作為配置文件 -->
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
-    <!-- contextConfigLocation參數用來指定Spring的配置文件 -->
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>/WEB-INF/applicationContext*.xml</param-value>
-    </context-param>
-
-
     <servlet>
         <servlet-name>springmvc</servlet-name>
         <servlet-class>
