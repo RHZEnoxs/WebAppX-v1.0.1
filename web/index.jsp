@@ -25,5 +25,7 @@
   <a href="chapter3">第三章 Spring MVC 的常用註解</a>
   <br>
   <a href="chapter4">第四章 Spring MVC 的標籤庫</a>
+  <br>
+  <a href="chapter12/loginForm">第十二章 Spring 5 整合 MyBatis 3 </a>
   </body>
 </html>

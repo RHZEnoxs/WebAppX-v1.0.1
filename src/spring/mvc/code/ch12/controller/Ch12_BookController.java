@@ -14,7 +14,8 @@ import java.util.List;
  * 處理圖書請求控制器
  * */
 @Controller
-public class BookController {
+@RequestMapping({ "/chapter12" })
+public class Ch12_BookController {
 
 	/**
 	 * 自動注入BookService
@@ -33,7 +34,7 @@ public class BookController {
 		// 將圖書集合添加到model當中
 		model.addAttribute("book_list", book_list);
 		// 跳轉到main頁面
-		return "main";
+		return "code_ch12/main";
 	}
 
 }

@@ -4,23 +4,23 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>登录页面</title>
+<title>登錄頁面</title>
 </head>
 <body>
-<h3>登录页面</h3>
+<h3>登錄頁面</h3>
 <form action="login" method="post">
-	<font color="red">${requestScope.message }</font>
+    <font color="red">${requestScope.message }</font>
      <table>
          <tr>
-         	<td><label>登录名: </label></td>
+            <td><label>登錄名: </label></td>
              <td><input type="text" id="loginname" name="loginname" ></td>
          </tr>
          <tr>
-         	<td><label>密码: </label></td>
+            <td><label>密碼: </label></td>
              <td><input type="password" id="password" name="password" ></td>
          </tr>
          <tr>
-             <td><input type="submit" value="登录"></td>
+             <td><input type="submit" value="登錄"></td>
          </tr>
      </table>
 </form>

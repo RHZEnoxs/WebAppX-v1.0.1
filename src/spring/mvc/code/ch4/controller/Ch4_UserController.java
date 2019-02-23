@@ -19,7 +19,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping("/jspTag")
-public class UserController {
+public class Ch4_UserController {
 
     @GetMapping(value="/registerForm")
     public String registerForm(Model model) {

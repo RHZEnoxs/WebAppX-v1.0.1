@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>首页</title>
+<title>首頁</title>
 <style type="text/css">
 	table{border-collapse:collapse;border-spacing:0;border-left:1px solid #888;border-top:1px solid #888;background:#efefef;}
 	th,td{border-right:1px solid #888;border-bottom:1px solid #888;padding:5px 15px;}
@@ -13,15 +13,15 @@
 </style>
 </head>
 <body>
-欢迎[${sessionScope.user.username }]访问
+歡迎[${sessionScope.user.username }]訪問
 <br>
 <table border="1">
 	<tr>
-		<th>封面</th><th>书名</th><th>作者</th><th>价格</th>
+		<th>封面</th><th>書名</th><th>作者</th><th>價格</th>
 	</tr>
 	<c:forEach items="${requestScope.book_list }" var="book">
 		<tr>
-			<td><img src="images/${book.image }" height="60"></td>
+			<td><img src="/images/${book.image }" height="60"></td>
 			<td>${book.name }</td>
 			<td>${book.author }</td>
 			<td>${book.price }</td>

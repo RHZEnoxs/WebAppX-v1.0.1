@@ -19,9 +19,12 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="SpringMVC" level="project" />
-    <orderEntry type="library" name="Log" level="project" />
-    <orderEntry type="library" name="Servlet" level="project" />
-    <orderEntry type="library" name="Json" level="project" />
+    <orderEntry type="library" name="Spring MVC" level="project" />
+    <orderEntry type="library" name="MyBatis" level="project" />
+    <orderEntry type="library" name="JSP-Servlet" level="project" />
+    <orderEntry type="library" name="Logger" level="project" />
+    <orderEntry type="library" name="JSON" level="project" />
+    <orderEntry type="library" name="Common" level="project" />
+    <orderEntry type="library" name="SqlDB" level="project" />
   </component>
 </module>
