@@ -1,0 +1,30 @@
+2018-12-03 14:00 紀錄：
+package:
+    com.enoxs - 主體
+    spring.mve.code - 書本範例（未整併）
+    workspace.sample - 常用範例（未整併）
+
+Config:
+    spring.mve.code -
+        springmvc-config.xml
+        web.xml (springmvc)
+    com.enoxs -
+        applicationContext.xml
+        WebHome-servlet.xml
+
+#2019-02-23 20:20 日誌紀錄:
+已完成下列 ： Spring MVC + MyBatis Code 練習
+
+Spring MVC 基礎：
+Ch2、Ch3、Ch4
+
+MyBatis 基礎與進階：
+Ch8、Ch9、Ch10、Ch11
+
+Spring + MyBatis 整合：
+Ch12
+
+剩餘：
+1. Ch13 實戰項目
+2. Ch5、Ch6、Ch7 Spring MVC 進階
+3. WepAppX-v1.0.1 Code Review

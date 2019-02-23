@@ -200,6 +200,12 @@ public class Ch4_UserController {
         return "code_ch4/select/selectForm4";
     }
 
+    /**
+     * Chapter 4 :
+     * 若頁面出現 特定異常處理頁面
+     * 拋出異常信息：Invalid target for Validator
+     * 將以下方法著解掉即可正常使用
+     */
     @GetMapping(value="/registerFormCheck")
     public String registerFormErr(Model model) {
         User user = new User();
